@@ -29,10 +29,10 @@ export default function ProductList () {
     const listProducts = frogs.map((frog) => {
         return (
             <ul type="none" className="frogCard">
-                <li>
+                <li key={frog.id}>
                     {frog.name}
                 </li>
-                <li>
+                <li key={frog.id}>
                     fact: {frog.fact}
                 </li>
             </ul>
